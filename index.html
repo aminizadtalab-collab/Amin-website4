@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لیونل مسی - اسطوره فوتبال جهان</title>
+    <meta name="description" content="معرفی کامل لیونل مسی، بهترین بازیکن فوتبال جهان">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0056b3",
+                        secondary: "#2c3e50",
+                        accent: "#e74c3c"
+                    },
+                    fontFamily: {
+                        'sans': ['Vazirmatn', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+    <header class="bg-gradient-to-r from-primary to-secondary text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <a href="#" class="flex items-center" onclick="event.preventDefault(); scrollToTop()">
+                    <i class="fas fa-futbol mr-2"></i>
+                    <span>لیونل مسی</span>
+                </a>
+            </div>
+            <ul class="hidden md:flex space-x-6 space-x-reverse">
+                <li><a href="#about" class="hover:text-accent transition duration-300" onclick="event.preventDefault(); scrollToSection('about')">معرفی</a></li>
+                <li><a href="#career" class="hover:text-accent transition duration-300" onclick="event.preventDefault(); scrollToSection('career')">حرفه‌ای</a></li>
+                <li><a href="#achievements" class="hover:text-accent transition duration-300" onclick="event.preventDefault(); scrollToSection('achievements')">دستاوردها</a></li>
+                <li><a href="#gallery" class="hover:text-accent transition duration-300" onclick="event.preventDefault(); scrollToSection('gallery')">گالری</a></li>
+            </ul>
+            <button class="md:hidden text-xl" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobileMenu" class="hidden md:hidden bg-primary px-4 py-2">
+            <ul class="flex flex-col space-y-3">
+                <li><a href="#about" class="block hover:text-accent" onclick="event.preventDefault(); scrollToSection('about'); toggleMobileMenu()">معرفی</a></li>
+                <li><a href="#career" class="block hover:text-accent" onclick="event.preventDefault(); scrollToSection('career'); toggleMobileMenu()">حرفه‌ای</a></li>
+                <li><a href="#achievements" class="block hover:text-accent" onclick="event.preventDefault(); scrollToSection('achievements'); toggleMobileMenu()">دستاوردها</a></li>
+                <li><a href="#gallery" class="block hover:text-accent" onclick="event.preventDefault(); scrollToSection('gallery'); toggleMobileMenu()">گالری</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="hero" class="mb-16">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-secondary">لیونل آندرس مسی</h1>
+                    <h2 class="text-2xl md:text-3xl mb-6 text-primary">اسطوره فوتبال جهان</h2>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        لیونل مسی، زاده ۲۴ ژوئن ۱۹۸۷ در روساریو، آرژانتین، به عنوان یکی از بزرگ‌ترین بازیکنان تاریخ فوتبال شناخته می‌شود. او با مهارت‌های خارق‌العاده، دید بازی فوق‌العاده و گل‌زنی بی‌نظیرش، تحولی در دنیای فوتبال ایجاد کرده است.
+                    </p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <button class="bg-accent hover:bg-red-700 text-white px-6 py-2 rounded-lg transition duration-300" onclick="event.preventDefault(); scrollToSection('about')">
+                            بیشتر بدانید
+                        </button>
+                        <button class="border border-primary text-primary hover:bg-primary hover:text-white px-6 py-2 rounded-lg transition duration-300" onclick="event.preventDefault(); scrollToSection('gallery')">
+                            گالری تصاویر
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="messi1.jpg" alt="لیونل مسی در حال بازی" class="w-full rounded-lg shadow-xl" loading="lazy" style="width: 500px; height: 600px;">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-16 py-8">
+            <h2 class="text-3xl font-bold mb-8 text-center text-secondary">زندگی‌نامه لیونل مسی</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">دوران کودکی</h3>
+                    <p class="mb-4 leading-relaxed">
+                        لیونل مسی در ۲۴ ژوئن ۱۹۸۷ در شهر روساریو، آرژانتین به دنیا آمد. او از همان کودکی استعداد خارق‌العاده‌ای در فوتبال نشان داد. در سن ۵ سالگی به تیم محلی گراندولی پیوست و در ۸ سالگی به نیوولز اولد بویز، یکی از باشگاه‌های بزرگ آرژانتین ملحق شد.
+                    </p>
+                    <p class="leading-relaxed">
+                        در سن ۱۱ سالگی، مسی با مشکل کمبود هورمون رشد مواجه شد که درمان آن هزینه‌های سنگینی داشت. خانواده‌اش توان پرداخت این هزینه‌ها را نداشتند، اما استعداد او توجه باشگاه بارسلونا را جلب کرد و آنها هزینه‌های درمانش را پرداختند و او را به اسپانیا آوردند.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">ویژگی‌های بازی</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 ml-2"></i>
+                            <span>سرعت و چابکی فوق‌العاده</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 ml-2"></i>
+                            <span>کنترل توپ و دریبلینگ خیره‌کننده</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 ml-2"></i>
+                            <span>دید بازی و پاس‌دهی بی‌نظیر</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 ml-2"></i>
+                            <span>توانایی گلزنی از هر موقعیتی</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mt-1 ml-2"></i>
+                            <span>خلاقیت و هوش فوتبالی بالا</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="career" class="mb-16 py-8 bg-white rounded-xl shadow-md p-6">
+            <h2 class="text-3xl font-bold mb-8 text-center text-secondary">حرفه فوتبالی</h2>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">بارسلونا (۲۰۰۴-۲۰۲۱)</h3>
+                    <p class="mb-4 leading-relaxed">
+                        مسی در سال ۲۰۰۰ به آکادمی جوانان بارسلونا (لا ماسیا) پیوست. او اولین بازی رسمی خود را برای تیم بزرگسالان بارسلونا در سال ۲۰۰۴ انجام داد و به سرعت به ستاره تیم تبدیل شد. در طول ۱۷ سال حضور در بارسلونا، او به نماد این باشگاه تبدیل شد و رکوردهای بی‌شماری را شکست.
+                    </p>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">دستاوردهای کلیدی در بارسلونا:</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>۱۰ قهرمانی لالیگا</li>
+                            <li>۷ قهرمانی کوپا دل ری</li>
+                            <li>۴ قهرمانی لیگ قهرمانان اروپا</li>
+                            <li>۶ توپ طلای بهترین بازیکن جهان</li>
+                            <li>بهترین گلزن تاریخ بارسلونا با ۶۷۲ گل</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">پاریس سن ژرمن (۲۰۲۱-۲۰۲۳)</h3>
+                    <p class="mb-4 leading-relaxed">
+                        در سال ۲۰۲۱، مسی به دلیل مشکلات مالی بارسلونا مجبور به ترک این باشگاه شد و به پاریس سن ژرمن پیوست. او در این تیم نیز عملکرد درخشانی داشت و به همراه کیلین امباپه و نیمار، یکی از خطرناک‌ترین خطوط حمله فوتبال جهان را تشکیل دادند.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">تیم ملی آرژانتین</h3>
+                    <p class="mb-4 leading-relaxed">
+                        مسی اولین بازی خود برای تیم ملی آرژانتین را در سال ۲۰۰۵ انجام داد. او به عنوان کاپیتان تیم ملی، آرژانتین را به فینال جام جهانی ۲۰۱۴ رساند که در آنجا به آلمان باختند. سرانجام در سال ۲۰۲۱، او با آرژانتین به قهرمانی کوپا آمریکا رسید و اولین عنوان بزرگ خود با تیم ملی را کسب کرد.
+                    </p>
+                    <p class="leading-relaxed">
+                        در سال ۲۰۲۲، مسی آرژانتین را به قهرمانی جام جهانی فوتبال رساند و با این عنوان، جایزه توپ طلای هفتم خود را نیز دریافت کرد.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="mb-16 py-8">
+            <h2 class="text-3xl font-bold mb-8 text-center text-secondary">دستاوردها و افتخارات</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-accent mb-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">توپ طلا</h3>
+                    <p>برنده توپ طلا در سال‌های ۲۰۰۹، ۲۰۱۰، ۲۰۱۱، ۲۰۱۲، ۲۰۱۵، ۲۰۱۹ و ۲۰۲۱ (رکورددار بیشترین توپ طلا)</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-accent mb-4">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">جام جهانی ۲۰۲۲</h3>
+                    <p>قهرمان جام جهانی فوتبال ۲۰۲۲ با تیم ملی آرژانتین و برنده توپ طلای جام جهانی</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">رکوردهای گلزنی</h3>
+                    <p>رکورددار بیشترین گل در یک سال تقویمی (۹۱ گل در سال ۲۰۱۲) و بیشترین گل در لالیگا (۴۷۴ گل)</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-accent mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">لیگ قهرمانان اروپا</h3>
+                    <p>۴ بار قهرمان لیگ قهرمانان اروپا با بارسلونا و بهترین گلزن تاریخ بارسلونا در این رقابت‌ها</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-accent mb-4">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">کوپا آمریکا ۲۰۲۱</h3>
+                    <p>قهرمان کوپا آمریکا ۲۰۲۱ با تیم ملی آرژانتین و بهترین بازیکن و گلزن مسابقات</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-accent mb-4">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">جوایز فردی</h3>
+                    <p>برنده ۶ کفش طلای اروپا، بهترین بازیکن سال فوتبال جهان از طرف فیفا (۲۰۱۹) و بسیاری جوایز دیگر</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="mb-16 py-8">
+            <h2 class="text-3xl font-bold mb-8 text-center text-secondary">گالری تصاویر</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <img src="messi2.jpg" alt="مسی در حال گلزنی" class="w-full h-64 object-cover" loading="lazy"  style="width: 600px; height: 400px;">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-semibold text-lg mb-2 text-primary">گلزنی در لیگ قهرمانان</h3>
+                        <p class="text-gray-600">مسی در حال گلزنی برای بارسلونا در لیگ قهرمانان اروپا</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <img src="messi4.jpg" alt="مسی با جام جهانی" class="w-full h-64 object-cover" loading="lazy"  style="width: 600px; height: 400px;">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-semibold text-lg mb-2 text-primary">قهرمانی جام جهانی ۲۰۲۲</h3>
+                        <p class="text-gray-600">مسی در حال جشن گرفتن قهرمانی جام جهانی با تیم ملی آرژانتین</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <img src="messi5.jpg" alt="مسی در حال دریبل" class="w-full h-64 object-cover" loading="lazy" style="width: 600px; height: 400px;">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-semibold text-lg mb-2 text-primary">مهارت‌های دریبلینگ</h3>
+                        <p class="text-gray-600">مسی در حال نمایش مهارت‌های خارق‌العاده دریبلینگ</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <img src="messi3.jpg" alt="مسی با توپ طلا" class="w-full h-64 object-cover" loading="lazy"  style="width: 600px; height: 400px;">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-semibold text-lg mb-2 text-primary">دریافت توپ طلا</h3>
+                        <p class="text-gray-600">مسی در حال دریافت هفتمین توپ طلای خود در سال ۲۰۲۱</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <img src="messi6.jpg" alt="مسی در پاریس سن ژرمن" class="w-full h-64 object-cover" loading="lazy;" style="width: 600px; height: 400px;">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-semibold text-lg mb-2 text-primary">دوران پاریس سن ژرمن</h3>
+                        <p class="text-gray-600">مسی در حال بازی برای پاریس سن ژرمن در لیگ ۱ فرانسه</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <img src="messi0.jpg" alt="مسی در کودکی" class="w-full h-64 object-cover" loading="lazy;" style="width: 600px; height: 400px;" >
+                    <div class="p-4 bg-white">
+                        <h3 class="font-semibold text-lg mb-2 text-primary">دوران کودکی</h3>
+                        <p class="text-gray-600">مسی در دوران کودکی و شروع فوتبال در آرژانتین</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 py-8 bg-gradient-to-r from-primary to-secondary text-white rounded-xl p-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">آمار و ارقام خیره‌کننده مسی</h2>
+                <p class="text-xl mb-8">برخی از آمارهای باورنکردنی از حرفه درخشان لیونل مسی</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div>
+                        <div class="text-4xl font-bold mb-2">800+</div>
+                        <div class="text-sm">گل در تمام رقابت‌ها</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">350+</div>
+                        <div class="text-sm">پاس گل در تمام رقابت‌ها</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">7</div>
+                        <div class="text-sm">توپ طلا</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">40+</div>
+                        <div class="text-sm">عنوان قهرمانی</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">لیونل مسی</h3>
+                    <p class="mb-4">اسطوره فوتبال جهان و بهترین بازیکن نسل خود</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-white hover:text-accent transition duration-300" onclick="event.preventDefault()">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-accent transition duration-300" onclick="event.preventDefault()">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-accent transition duration-300" onclick="event.preventDefault()">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">لینک‌های سریع</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-accent transition duration-300" onclick="event.preventDefault(); scrollToSection('about')">معرفی</a></li>
+                        <li><a href="#career" class="hover:text-accent transition duration-300" onclick="event.preventDefault(); scrollToSection('career')">حرفه‌ای</a></li>
+                        <li><a href="#achievements" class="hover:text-accent transition duration-300" onclick="event.preventDefault(); scrollToSection('achievements')">دستاوردها</a></li>
+                        <li><a href="#gallery" class="hover:text-accent transition duration-300" onclick="event.preventDefault(); scrollToSection('gallery')">گالری</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">تماس با ما</h3>
+                    <p class="mb-2">برای اطلاعات بیشتر می‌توانید با ما در تماس باشید</p>
+                    <p class="flex items-center">
+                        <i class="fas fa-envelope ml-2"></i>
+                        <span>info@messifans.com</span>
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>© ۲۰۲۳ تمامی حقوق برای وبسایت لئونل مسی محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data
+        const achievements = [
+            { "title": "توپ طلا", "count": 7, "description": "برنده توپ طلا در سال‌های ۲۰۰۹، ۲۰۱۰، ۲۰۱۱، ۲۰۱۲، ۲۰۱۵، ۲۰۱۹ و ۲۰۲۱" },
+            { "title": "جام جهانی", "count": 1, "description": "قهرمان جام جهانی ۲۰۲۲ با آرژانتین" },
+            { "title": "لیگ قهرمانان", "count": 4, "description": "قهرمان لیگ قهرمانان اروپا با بارسلونا" }
+        ];
+
+        // Functions
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Event listeners
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('href').substring(1);
+                if(sectionId) {
+                    scrollToSection(sectionId);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
